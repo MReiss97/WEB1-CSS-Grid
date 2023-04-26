@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; 
+    background-color: teal;
+}
+.item6 { grid-area: navigation;
+background-color:green}
+.item2 { grid-area: aside; 
+    background-color:lightgreen;
+}
+.item3 { grid-area: content; 
+    background-color:blue;
+}
+.item4 { grid-area: section; 
+    background-color:darkblue;
+}
+.item5 { grid-area: footer;
+background-color:teal;
+    
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'navigation navigation navigation navigation navigation navigation'
+    'aside aside content content content content'
+    'aside aside section section section section'
+    'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  color:white;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Layout</h1>
+
+<p>This grid layout contains six columns and three rows:</p>
+
+<div class="grid-container">
+  <div class="item1">header</div>
+  <div class="item6">navigation</div>
+  <div class="item2">aside</div>
+  <div class="item3">content</div>  
+  <div class="item4">section</div>
+  <div class="item5">footer</div>
+</div>
+
+</body>
+</html>
